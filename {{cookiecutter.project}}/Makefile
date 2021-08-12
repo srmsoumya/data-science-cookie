@@ -6,8 +6,11 @@ SHELL=/bin/bash
 CONDA_ACTIVATE=source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate ; conda activate
 
 help:
-	@echo "- conda-update: Create conda environment with Python={{cookiecutter.python_version}} & pip-tools"
+	@echo "- conda-update: Create conda environment {{cookiecutter.project}} with Python={{cookiecutter.python_version}} & pip-tools"
 	@echo "- pip-tools: Compiles exact pip packages"
+	@echo "- install: Creates conda environment & installs required packages using pip-tools"
+	@echo "- setup: Initialize GIT & install pre-commit packages"
+	@echo "- clean: Cleans up pycache & ipynb checkpoints"
 
 conda-update:
 	mamba env update --prune -f environment.yaml
