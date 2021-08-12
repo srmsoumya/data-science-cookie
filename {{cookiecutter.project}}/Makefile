@@ -1,6 +1,6 @@
 # https://blog.ianpreston.ca/conda/python/bash/2020/05/13/conda_envs.html
 
-.ONESHELL
+.ONESHELL:
 
 SHELL=/bin/bash
 CONDA_ACTIVATE=source $$(conda info --base)/etc/profile.d/conda.sh ; conda activate ; conda activate
