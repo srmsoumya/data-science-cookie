@@ -10,7 +10,7 @@ help:
 	@echo "- pip-tools: Compiles exact pip packages"
 
 conda-update:
-	conda env update --prune -f environment.yaml
+	mamba env update --prune -f environment.yaml
 
 pip-tools:
 	$(CONDA_ACTIVATE) {{cookiecutter.conda_env_name}}
