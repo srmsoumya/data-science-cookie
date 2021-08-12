@@ -24,7 +24,7 @@ repos:
     rev: 0.4.0
     hooks:
     -   id: nbstripout
-        exclude: '*_experiment.ipynb'
+        exclude: '_experiment.ipynb'
 -   repo: https://github.com/nbQA-dev/nbQA
     rev: 0.11.1
     hooks:
