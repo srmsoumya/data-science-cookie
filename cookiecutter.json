@@ -1,0 +1,7 @@
+{
+    "project": "project",
+    "author": "srm",
+    "email": "<vnn.soumya2@gmail.com>",
+    "conda_env_name": "{{cookiecutter.project.lower().replace(' ', '-')}}",
+    "python_version": ["3.9", "3.8", "3.7", "3.6"]
+}

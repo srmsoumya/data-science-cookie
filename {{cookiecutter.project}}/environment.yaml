@@ -1,0 +1,8 @@
+name: {{cookiecutter.conda_env_name}}
+channels:
+  - defaults
+dependencies:
+  - python={{cookiecutter.python_version}}
+  - pip
+  - pip:
+    - pip-tools

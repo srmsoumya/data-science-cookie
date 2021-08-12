@@ -1,0 +1,4 @@
+-c prod.txt
+jupyterlab
+matplotlib
+nbdiff
